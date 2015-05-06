@@ -14,7 +14,7 @@ Installation
     virtualenv env
     source ./env/bin/activate
     pip install django
-    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/master/zipball --extension=py,json,.bowerrc {{project_name}}
+    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/archive/master.zip --extension=py,json,.bowerrc {{project_name}}
     cd {{project_name}}
     source ./bootstrap
 

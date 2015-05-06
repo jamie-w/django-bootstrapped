@@ -16,6 +16,7 @@
         {% block main-content %}
         {% endblock %}
         {% block base_scripts %}
+        <script src="{% url 'js_reverse' %}"></script>
         <script src="{% static 'bower/jquery/dist/jquery.min.js' %}"></script>
         <script src="{% static 'bower/bootstrap/dist/js/bootstrap.min.js' %}"></script>
         {% block extra_scripts %}{% endblock %}
