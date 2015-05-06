@@ -1,0 +1,7 @@
+#!/usr/bin
+
+pip install -r requirements.txt
+bower install
+syncdb
+python manage.py syncdb
+python manage.py runserver

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block pagetitle %}Hello World{% endblock %}
+    </title>
+    {% load staticfiles %}
+    {% block base_styles %}
+    <link rel="stylesheet" href="{% static 'bower/bootstrap/dist/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'bower/font-awesome/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/site.css' %}"/>
+    {% block extra_styles %}{% endblock %}
+    {% endblock %}
+</head>
+    <body>
+        {% block main-content %}
+        {% endblock %}
+        {% block base_scripts %}
+        <script src="{% static 'bower/jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'bower/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        {% block extra_scripts %}{% endblock %}
+        <script src="{% static 'js/app.js' %}"></script>
+        {% endblock %}
+    </body>
+</html>

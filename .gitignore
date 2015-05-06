@@ -1,0 +1,10 @@
+*.db
+*.sqlite3
+*.pyc
+.idea
+
+bower
+site_media
+local_settings.py
+
+!.gitkeep
