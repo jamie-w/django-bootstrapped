@@ -96,6 +96,9 @@ STATICFILES_DIRS = (os.path.join(PACKAGE_ROOT, 'static'),)
 
 STATIC_URL = '/static/'
 
+# additional configurations
+
+JS_REVERSE_JS_MINIFY = False
 
 # override parameters on staging and production
 try:
