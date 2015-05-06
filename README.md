@@ -10,7 +10,7 @@ To start, it includes
 Installation
 ------------
 
-    cd /to/empty/directory \# *i.e. {{project_name}}.com*
+    cd /to/empty/directory # *i.e. {{project_name}}.com*
     virtualenv env
     source ./env/bin/activate
     pip install django
@@ -18,6 +18,6 @@ Installation
     cd {{project_name}}
     source ./bootstrap
 
-Open the browser to 
+Open the browser to 127.0.0.1:8000 and you should see "Hello World" 
 
 

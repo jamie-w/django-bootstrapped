@@ -4,6 +4,11 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns(
     '',
-    url(r'^$', TemplateView.as_view(template_name='homepage.html')),
+    # external libraries
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^jsreverse/$', 'django_js_reverse.views.urls_js', name='js_reverse'),
+
+    # the project
+    url(r'^$', TemplateView.as_view(template_name='homepage.html')),
+
 )
