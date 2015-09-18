@@ -7,11 +7,10 @@ django-js-reverse==0.3.3
 sqlparse==0.1.15
 wsgiref==0.1.2
 
-
-# Authwrap written by jamie-w
+# Authwrap as written by jamie-w
 
 # git repo
--e git+https://bitbucket.org/dukeofweatherby/django-authwrap.git#egg=django-authwrap-authwrap-mixins
+-e git+https://bitbucket.org/dukeofweatherby/django-authwrap.git@authwrap-mixins#egg=django-authwrap-authwrap-mixins
 
 # local version
 # -e /Users/jamie/Code/home/django-authwrap 
