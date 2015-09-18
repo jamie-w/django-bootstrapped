@@ -1,4 +1,4 @@
-Django==1.7.3
+Django==1.8.3
 argparse==1.2.1
 boto==2.36.0
 django-angular==0.7.13

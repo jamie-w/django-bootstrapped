@@ -3,7 +3,6 @@
 pip install -r requirements.txt
 bower install
 mv {{project_name}}/localsettings.template.py {{project_name}}/localsettings.py
-syncdb
 python manage.py syncdb
 python manage.py loaddata {{project_name}}/fixtures/sites.json
 python manage.py runserver
