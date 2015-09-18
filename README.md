@@ -11,12 +11,10 @@ Installation
 ------------
 
     cd /to/empty/directory # *i.e. {{project_name}}.com*
-    virtualenv env
-    source ./env/bin/activate
     pip install django
-    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/archive/master.zip --extension=py,json,.bowerrc {{project_name}}
+    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/archive/master.zip --extension=py,json,.bowerrc,bootstrap {{project_name}}
     cd {{project_name}}
-    source ./bootstrap
+    source bootstrap
 
 Open the browser to 127.0.0.1:8000 and you should see "Hello World" 
 
