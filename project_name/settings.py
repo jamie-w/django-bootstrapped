@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(PROJECT_ROOT, ...)
 import os
+from django.core.urlresolvers import reverse_lazy
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = (
     "bootstrapform",
 
     # project
+    'accounts',
 )
 
 MIDDLEWARE_CLASSES = (
