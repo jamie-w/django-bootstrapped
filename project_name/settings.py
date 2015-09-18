@@ -86,6 +86,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_ID = 1
+
+AUTH_USER_MODEL = 'accounts.Account'
+FROM_EMAIL = 'no-reply@devreflect.com'
+SUPPORT_EMAIL = 'support@devreflect.com'
+LOGGED_IN_REDIRECT_URL = 'home'
+LOGIN_URL = reverse_lazy('authwrap:login')
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
