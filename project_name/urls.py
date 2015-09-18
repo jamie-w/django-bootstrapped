@@ -9,6 +9,6 @@ urlpatterns = patterns(
     url(r'^jsreverse/$', 'django_js_reverse.views.urls_js', name='js_reverse'),
 
     # the project
-    url(r'^$', TemplateView.as_view(template_name='homepage.html')),
+    url(r'^$', TemplateView.as_view(template_name='homepage.html'), name='home'),
 
 )
