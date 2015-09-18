@@ -1,0 +1,18 @@
+[
+  {
+    "fields": {
+      "domain": "{{project_name}}.com",
+      "name": "{{project_name}}"
+    },
+    "model": "sites.site",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "domain": "127.0.0.1:8000",
+      "name": "{{project_name}} Local"
+    },
+    "model": "sites.site",
+    "pk": 2
+  }
+]

@@ -102,6 +102,6 @@ JS_REVERSE_JS_MINIFY = False
 
 # override parameters on staging and production
 try:
-    from local_settings import *
+    from localsettings import *
 except ImportError as e:
     pass
