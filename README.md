@@ -12,7 +12,7 @@ Installation
 
     cd /to/empty/directory # *i.e. {{project_name}}.com*
     pip install django
-    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/archive/master.zip --extension=py,json,.bowerrc,bootstrap {{project_name}}
+    django-admin startproject --template=https://github.com/jamie-w/django-bootstrapped/archive/with-authwrap.zip --extension=py,json,.bowerrc,bootstrap {{project_name}}
     cd {{project_name}}
     source bootstrap
 
