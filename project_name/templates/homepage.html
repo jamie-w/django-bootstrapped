@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 {% block main-content %}
 <div class="container">
-    <h1>Hello World!</h1>
+    <h1><span class="fa fa-long-arrow-right"></span> Hello World!</h1>
+
+    {% if user.is_authenticated %}
+    <p>Hello {{ user }}</p>
+    {% else %}
+    <p>Whomp, whomp ... No user found.</p>
+    <p>
+        <a class="btn btn-small" href="{% url 'authwrap:login' %}">Login</a>
+        <a class="btn btn-small" href="{% url 'authwrap:register' %}">Register</a>
+    </p>
+    {% endif %}
+
 </div>
 {% endblock %}
