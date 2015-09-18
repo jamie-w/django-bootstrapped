@@ -7,6 +7,7 @@ urlpatterns = patterns(
     # external libraries
     url(r'^admin/', include(admin.site.urls)),
     url(r'^jsreverse/$', 'django_js_reverse.views.urls_js', name='js_reverse'),
+    url(r'^account/', include('authwrap.urls', namespace='authwrap'))
 
     # the project
     url(r'^$', TemplateView.as_view(template_name='homepage.html')),

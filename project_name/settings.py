@@ -40,8 +40,9 @@ INSTALLED_APPS = (
 
     # external
     'debug_toolbar',
-    "django_js_reverse",
-    "bootstrapform",
+    'django_js_reverse',
+    'bootstrapform',
+    'authwrap',
 
     # project
 )
